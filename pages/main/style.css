@@ -143,8 +143,8 @@ WATCH SECTION
 }
 
 .watch-button:hover {
-    background-color: #E47209;
-    border-color: #E47209;
+        background-color: #E47209;
+        border-color: #E47209;
 }
 
 /*
@@ -276,7 +276,8 @@ PETS
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-bottom: -10rem;
 }
 .centered-button:hover {
     background-color: #E47209;
@@ -296,6 +297,7 @@ PETS
     display: flex;
     margin: auto;
     justify-content: space-evenly;
+    margin-bottom: -6rem;
 }
 .leftarrow :hover{
     cursor: pointer;
@@ -329,6 +331,8 @@ FRIEND
     border-radius: 20px;
     background-color: rgba(253, 253, 255, 0.52);
     border: rgba(253, 253, 255, 0.52);
+    margin-bottom: 6rem;
+    margin-top: 4rem;
 }
 .friend h2 {
     text-align: center
@@ -407,44 +411,94 @@ FRIEND
 TESTIMONIALS
 *
 */
+
+.testimonials {
+    margin-bottom: -10rem;
+}
+
 .testimonials-block {
     margin: auto;
     width: 1160px;
+    margin-bottom: -15rem;
 }
 
 .testi-title {
+    margin-top: 10rem;
     text-align: center;
     font-size: 36px;
     line-height: 47px;
     color: #333B41;
 }
+
 .inline-testi {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .testi-1 {
+    background-color: #F1F3F2;
     margin-top: 20px;
     border-radius: 20px;
     border: solid #FEBDAB;
+    border-width: 0.5mm;
     width: 268px;
     height: 391px;
     line-height: 16px;
-    text-align: justify;
     font-size: 15px;
-    padding: 5px;
+    padding-left: 10px;
 }
+
 .bottom-leav img {
-    margin-left: 85%;
+    margin-left: 83%;
+    margin-bottom: 5rem;
+    bottom: 0;
     display: flex;
 }
+.squared-button {
+    width: 298px;
+    height: 54px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid #FE9013;
+    background-color:#FE9013;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+.squared-button:hover {
+    background-color: #E47209;
+    border-color: #E47209;
+}
+.slide-bar {
+    width: 599px;
+    height: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+    border: solid #FEBDAB;
+    border-width: 0.5mm;
+    background-color: #F1F3F2;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.slide-bar:hover {
+    cursor: pointer;
+}
+
 /*
 *
 FOOTER
 *
 */
+
 .footer {
     background-color: #111115;
     position: relative;
@@ -453,11 +507,81 @@ FOOTER
     width: 100%;
     height: 443px;
     color: #FFFFFF;
+    justify-content: space-evenly;
 }
-.subscribe {
-    bottom: 0;
-    right: 0;
-}
+
 .footer-button {
     cursor: pointer;
+}
+
+.footer-logo {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.media-list {
+    margin-left: -3rem;
+    margin-top: 4rem;
+}
+
+.left-footer {
+    margin-left: 2rem;
+}
+
+.middle-footer-nav {
+    position: relative;
+    display: flex;
+    margin: 0;
+}
+.footer-list {
+    margin: auto;
+    margin-left: 20rem;
+    margin-top: -2rem;
+    width: 50%;
+    display: flex;
+}
+.footer-item {
+    margin: 0 2rem;
+}
+
+.subscribe-form {
+    position: absolute;
+    margin-left: 52rem;
+    margin-top: -22rem;
+}
+.signature-block {
+    display: block;
+    white-space: nowrap;
+    margin-top: -3rem;
+    margin-left: 60rem;
+}
+.signature-block a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+.signature-block a:hover {
+    text-decoration: underline;
+}
+
+input {
+    background-color: black;
+    border: solid #FE9013;
+    border-width: 0.5mm;
+    padding: 10px 25px;
+    display: inline!important;
+}
+
+.footer-button {
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+form {
+    display: inline!important;
+    margin: 0;
+    padding: 0;
 }
