@@ -84,7 +84,7 @@ body {
 
 /*
 *
-WATCH SECTION
+PANDA IMG SECTION
 *
 */
 
@@ -230,7 +230,7 @@ FRIEND
     cursor: pointer;
 }
 
-input[type="radio"]{
+.donation-radio input[type="radio"]{
     justify-content: space-evenly;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -245,6 +245,69 @@ input[type="radio"]{
     cursor: pointer;
     border-radius: 50%;
   }
+  .donation-radio input[type="radio"]:checked{
+    justify-content: space-evenly;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+    margin: 0 7.5rem 0 0px;
+    background-color:#FE9013;
+    accent-color: #FFEE2E;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+input[type="number"]{
+    border: sold #929699;
+    background-color: rgba(253, 253, 255, 0.52);
+    margin-left: 26rem;
+    margin-top: 4rem;
+}
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.donation-bar  ul li{
+    display: inline;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-left: 0.1rem;
+    padding-left: 1.5rem;
+    padding-right: 3.8rem;
+  }
+.lastone {
+    margin-left: 3px;
+}
+
+.another-amount {
+    position: relative;
+
+}
+
+.unit {
+    color: #333B41;
+    position: absolute;
+    display: block;
+    left: 600px;
+    top: 73px;
+    z-index: 9;
+  }
+
+.once-radio {
+    color: #333B41;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    text-align: center;
+}
 
 .share-text {
     text-align: center;
