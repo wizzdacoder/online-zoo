@@ -130,7 +130,7 @@ FRIEND
 
 .donate_section {
     margin: auto;
-    padding: 10px ;
+    padding: 10px;
     width: 100%;
     background-color: #FEBDAB;
     font-family: 'Roboto';
@@ -157,15 +157,17 @@ FRIEND
 }
 
 .white-desc {
+    width: 1160px;
     font-size: 16px;
+    padding-left: 14rem;
     line-height: 22.4px;
-    margin-left: 5.5rem;
     font-weight: 400;
     color:rgba(255, 255, 255, 1);
 }
 .donation-info {
     font-size: 36px;
-    margin-left: 5.5rem;
+    margin-left: 14rem;
+    margin-right: 10rem;
     line-height: 46.8px;
     font-weight: 400;
     color: rgba(254, 144, 19, 1);
