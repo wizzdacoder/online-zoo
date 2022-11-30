@@ -24,12 +24,14 @@ p {
 
 .header {
     background: #000000;
-    position: relative;
+    position:relative;
     display: flex;
     margin: 0;
+    width: 100%;
 }
+
 .logo-box {
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
 }
 
 .main-header {
@@ -50,10 +52,11 @@ p {
     list-style: none;
     display: flex;
     align-items: center;
+    margin-right: -2rem;
 }
 
 .nav-item  {
-    margin-left: 2px;
+    margin-left: 3px;
     margin-right: 55px;
 }
 
@@ -85,6 +88,23 @@ p {
     margin-left: 24rem;
     margin-right: 2rem;
 }
+.burger-menu {
+    position: absolute;
+    top: 2rem;
+    right: 15%;
+    width: 30px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.burger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
 /*
 *
@@ -93,37 +113,37 @@ WATCH SECTION
 */
 
 .watch-background-image {
-    margin: 0 auto;
     background-image: url(../../assets/images/Giant\ Panda.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 780px;
+    padding-top: 1rem;
 }
 
-.watch-block {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.watch-text {
-    background:#FE9013;
-    color:#FFFFFF;
-    border-radius: 50%;
+.watch-circle {
+    background-color:#FE9013;
     width: 465px;
     height: 465px;
-    margin-top: 1rem;
+    border-radius: 50%;
+    margin-left: 50%;
+}
+.watch-text {
+    color:#FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 106.5px;
     line-height: 80px;
     text-align: center;
     vertical-align: middle;
-    margin-left: 50%;
+    margin-left: 55%;
+    margin-top: -25rem;
+    position: absolute;
 }
+
 .watch-text span {
     color:#FFEE2E;
 }
+
 .watch-button {
     width: 298px;
     height: 54px;
@@ -138,8 +158,8 @@ WATCH SECTION
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 1rem;
-    margin-left: 58%;
+    margin-top: 5rem;
+    margin-left: 60%;
 }
 
 .watch-button:hover {
@@ -158,6 +178,7 @@ BACKSTAGE CAP SECTION
     display: flex;
     width: 1160px;
     height: 427px;
+    padding-top: 5rem;
 }
 
 .backstage-block {
@@ -195,9 +216,9 @@ line-height: 22.4px;
 }
 
 .right-flowers {
-    margin-top: -35rem;
-    position: absolute;
-    right: -120px;
+    margin-top: -500px;
+    position: relative;
+    margin-left: 1200px;
 }
 
 /*
@@ -209,7 +230,7 @@ PETS
     border-radius: 5px;
     border: solid orange;
     border-width: 0.7mm;
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
     object-fit: cover;
 }
 .pet:hover .caption {
@@ -247,8 +268,9 @@ PETS
 }
 
 .grid-pets {
-    padding-top: 12rem;
-    row-gap: 10px;
+    padding-top: 16rem;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
     width: 1160px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -277,7 +299,7 @@ PETS
     font-size: 16px;
     font-weight: 500;
     margin-top: 6rem;
-    margin-bottom: -10rem;
+    margin-bottom: -40rem;
 }
 .centered-button:hover {
     background-color: #E47209;
@@ -293,11 +315,13 @@ PETS
     margin-top: 11.5rem;
 }
 .arrows {
-    padding-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    gap: 70rem;
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-    margin-bottom: -6rem;
+    margin-top: -36rem;
 }
 .leftarrow :hover{
     cursor: pointer;
@@ -308,6 +332,13 @@ PETS
     cursor: pointer;
     transition: 0.5s;
     opacity: 50%;
+}
+
+.petfood {
+    display: flex;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 19.5rem;
 }
 
 /*
@@ -404,8 +435,54 @@ FRIEND
     border-radius: 5px;
     background-color: #FFFFFF;
 }
-
-
+.how-img-4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+.how-img-5{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 630px;
+    margin-top: 80px;
+}
+.caption-pay {
+    color:#333B41;
+    display: flex;
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 1rem;
+    gap: 17rem;
+}
+.caption-pay :last-child{
+    margin-left: -3rem;
+}
+.centered-button2 {
+    width: 298px;
+    height: 54px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+    cursor: pointer;
+    border: solid #FE9013;
+    background-color:#FE9013;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.centered-button2:hover {
+    background-color: #E47209;
+    border-color: #E47209;
+}
 /*
 *
 TESTIMONIALS
@@ -413,7 +490,7 @@ TESTIMONIALS
 */
 
 .testimonials {
-    margin-bottom: -10rem;
+    margin-bottom: 30rem;
 }
 
 .testimonials-block {
@@ -446,15 +523,41 @@ TESTIMONIALS
     width: 268px;
     height: 391px;
     line-height: 16px;
+    font-family: Roboto;
     font-size: 15px;
+    font-weight: 300;
     padding-left: 10px;
+    padding-top: 0.5rem;
+}
+
+.testi-1 img {
+    margin: 0.5rem 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.testi-name {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.location {
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 3.8rem;
+    color: #BDBDBD;
+    font-weight: 100;
 }
 
 .bottom-leav img {
-    margin-left: 83%;
-    margin-bottom: 5rem;
-    bottom: 0;
-    display: flex;
+    position: absolute;
+    margin-left: 1450px;
+    margin-top: 200px;
 }
 .squared-button {
     width: 298px;
@@ -471,6 +574,7 @@ TESTIMONIALS
     font-size: 16px;
     font-weight: 500;
     margin-top: 4rem;
+    padding-bottom: 1rem;
 }
 .squared-button:hover {
     background-color: #E47209;
@@ -491,6 +595,13 @@ TESTIMONIALS
 
 .slide-bar:hover {
     cursor: pointer;
+}
+
+.slide-btn {
+    width: 80px;
+    height: 8px;
+    background:#FE9013;
+    border-radius: 5px;
 }
 
 /*
@@ -584,4 +695,249 @@ form {
     display: inline!important;
     margin: 0;
     padding: 0;
+}
+
+/* DIFFERENT SCREEN SIZES */
+
+@media screen and (max-width: 1000px){
+    .nav-item-end {
+        margin-left: 15%;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+    }
+    .nav-item-end {
+        display: none;
+    }
+    .watch-text {
+        display: none;
+    }
+    .watch-circle {
+        display: none;
+    }
+    .watch-button {
+        margin-left: 25%;
+        margin-top: 10rem;
+        }
+    .backstage-text {
+        margin-left: -28rem;
+        margin-top: -30rem;
+    }
+        .logo-box {
+        margin-left: -15rem;
+    }
+    header {
+        position: fixed;
+    }
+
+    .grid-pets {
+        margin-left: -19rem;
+        display: grid;
+        grid-template-columns: auto;
+        padding-bottom: 25rem;
+    }
+    .pet {
+        border-radius: 5px;
+        border: solid orange;
+        border-width: 0.7mm;
+        padding: 10px;
+        object-fit: cover;
+        width: 400px;
+        align-items: center;
+        margin-right: -5rem;
+    }
+
+    .backstage-image {
+        margin-left: 2rem;
+    }
+    .centered-button {
+        margin-top: -45rem;
+        margin-left: 2rem;
+    }
+    .centered-button2 {
+        margin-left: -35rem;
+    }
+
+    .joy-text {
+        width: 600px;
+    }
+    .covid-text {
+        width: 500px
+    }
+
+    .caption-pay {
+        display: grid;
+    }
+
+    .pay1 {
+        position: absolute;
+        margin-top: -40rem;
+        margin-left: 10rem;
+    }
+    .pay2 {
+        position: absolute;
+        margin-top: -30rem;
+        margin-left: 10rem;
+    }
+    .pay3 {
+        position: absolute;
+        margin-top: -21rem;
+        left: 13rem;
+    }
+
+    .orange-title {
+        margin-left: -35rem;
+    }
+    .how-img-4 {
+        display: none;
+    }
+    .how-img-5 {
+        display: none;
+    }
+
+    .covid-text {
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .how-images {
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+    }
+    .black-title {
+        margin-left: -35rem;
+
+    }
+    .how-images img {
+        display: inline-block;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .testi-title {
+        margin-top: 5rem;
+        margin-left: -35rem;
+    }
+    .inline-testi {
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-table;
+        padding-top: 5rem;
+        margin-left: 12rem;
+    }
+    .slide-bar {
+        margin-left: 1rem;
+    }
+    .squared-button {
+        margin-left: 3rem;
+        margin-top: 5rem;
+    }
+
+
+    .media-list {
+        margin-left: -3rem;
+        margin-top: 3rem;
+    }
+
+    .left-footer {
+        margin-left: 20rem;
+    }
+
+    .middle-footer-nav {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    .footer-list {
+        margin: auto;
+        margin-left: 20rem;
+        margin-top: -2rem;
+        width: 50%;
+        display: flex;
+    }
+    .footer-item {
+        margin: 0 2rem;
+    }
+
+    .subscribe-form {
+        position: absolute;
+        margin-left: 40rem;
+        margin-top: -27rem;
+    }
+    .signature-block {
+        display: block;
+        white-space: nowrap;
+        margin-top: -3rem;
+        margin-left: 60rem;
+    }
+    .signature-block a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 100;
+    }
+    .signature-block a:hover {
+        text-decoration: underline;
+    }
+
+    input {
+        background-color: black;
+        border: solid #FE9013;
+        border-width: 0.5mm;
+        padding: 10px 25px;
+        display: inline!important;
+    }
+
+    .footer-button {
+        padding: 10px 25px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .bottom-flowers {
+        display: none;
+    }
+    .bottom-leav {
+        display: none;
+    }
+    .right-flowers {
+        display: none;
+    }
+    .friend {
+        display: none;
+    }
+    .backstage-image {
+        margin-left: 10rem;
+    }
+    .centered-button {
+        display: flex;
+        margin-top: 25rem;
+        margin-left: 25rem;
+    }
+
+    .testi-title {
+        margin-top: 45rem;
+    }
+    .inline-testi {
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-table;
+        padding-top: 45rem;
+    }
+    .footer {
+        width: 20%;
+    }
+
 }
