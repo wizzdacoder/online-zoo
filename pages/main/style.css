@@ -659,6 +659,7 @@ ul {
 }
 
 .subscribe-form {
+    color: white;
     position: absolute;
     margin-left: 52rem;
     margin-top: -22rem;
@@ -679,7 +680,8 @@ ul {
 }
 
 input {
-    background-color: black;
+    background-color: #111115;
+    color: white;
     border: solid #FE9013;
     border-width: 0.5mm;
     padding: 10px 25px;
