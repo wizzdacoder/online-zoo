@@ -16,6 +16,11 @@ p {
     margin: auto;
 }
 
+button:active {
+    background-color: #4B9200;
+    border-color: #4B9200;
+}
+
 /*
 *
  HEADER
@@ -323,12 +328,12 @@ PETS
     justify-content: space-evenly;
     margin-top: -36rem;
 }
-.leftarrow :hover{
+.leftarrow:hover{
     cursor: pointer;
     transition: 0.5s;
     opacity: 50%;
 }
-.rightarrow :hover{
+.rightarrow:hover{
     cursor: pointer;
     transition: 0.5s;
     opacity: 50%;
@@ -545,7 +550,7 @@ TESTIMONIALS
     font-family: Roboto;
     font-style: normal;
 }
-
+    
 .location {
     position: absolute;
     margin-top: -2.5rem;
@@ -636,6 +641,7 @@ ul {
 .media-list {
     margin-left: -3rem;
     margin-top: 4rem;
+    transition: all 0.5s ease-out;
 }
 
 .left-footer {
@@ -681,16 +687,46 @@ ul {
 
 input {
     background-color: #111115;
-    color: white;
-    border: solid #FE9013;
-    border-width: 0.5mm;
-    padding: 10px 25px;
-    display: inline!important;
+    border: 1px orange solid;
+    border-radius: 2px;
+    color: #F1F3F2;
+    outline: none;
+    padding: 10px;
+}
+
+input:valid {
+    border: 1px green solid;
+}
+
+input:focus:invalid {
+    color: red;
+    border: 1px red solid;
+}
+
+input:focus:invalid+.footer-button {
+    color: red;
+    border: 1px red solid;
+}
+
+input:valid+.footer-button {
+    color: green;
+    border: 1px green solid;
 }
 
 .footer-button {
-    padding: 10px 25px;
-    display: inline-block;
+    border: 2px black solid;
+    background-color: #F1F3F2;
+    color: black;
+    margin-left: 10px;
+    text-transform: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.footer-button:hover,
+.footer-button:active {
+    background-color: #F1F3F2;
+    border: 2px #4B9200 solid;
+    color: #4B9200;
 }
 
 form {
@@ -701,17 +737,175 @@ form {
 
 /* DIFFERENT SCREEN SIZES */
 
+@media screen and (max-width: 1600px) {
+    body {
+        width: 1600px;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .nav-item-end {
         margin-left: 15%;
     }
+        body {
+            width: 1000px;
+        }
+        .watch-background-image {
+            width: 1000px;
+            height: 584px;
+        }
+        .watch-circle {
+            width: 367px;
+            height: 367px;
+            margin-top: -2rem;
+        }
+        .watch-text {
+            font-size: 85.6px;
+            line-height: 63.75px;
+            padding-left: 1rem;
+            margin-top: -19rem;
+        }
+        .watch-button {
+            margin-top: 3rem;
+        }
+        .nav-list {
+            margin-left: 8rem;
+        }
 
-}
+        .nav-item-end {
+            margin-left: 5rem;
+        }
+        .backstage-block {
+        margin-top: -7rem;
+        }
+        .backstage-image img{
+        width: 455px;
+        height: 408px;
+        margin-left: 2rem;
+        }
+
+        .backstage-text {
+        margin-left: 3rem;
+        }
+
+        .pet {
+            width: 294px;
+            height: 354px;
+            border-radius: 5px;
+            border: solid orange;
+            border-width: 0.7mm;
+            padding: 0 0 10px 0;
+            object-fit: fill;
+        }
+
+        .pet img {
+            width: 289px;
+            height: 280px;
+        }
+
+        .petfood {
+            width: 38px;
+            height: 38px;
+            margin-left: 15rem;
+            margin-top: -3rem;
+        }
+
+        .grid-pets {
+            padding-top: 6rem;
+            row-gap: 6rem;
+            column-gap: 1.5rem;
+            width: 600px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        .arrows {
+            position: absolute;
+            gap: 10rem;
+            margin-left: 22.5rem;
+            margin-top: -32rem;
+        }
+        .how-images {
+            gap: 15%;
+        }
+        .how-img-1 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-2 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-3 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-4 {
+            margin-left: 12rem;
+        }
+        .how-img-5 {
+            margin-left: 32rem;
+        }
+        .caption-pay {
+            gap: 12rem;
+        }
+        .black-title {
+            margin-left: -10rem;
+        }
+        .orange-title {
+            margin-left: -10rem;
+        }
+        .centered-button2 {
+            margin-left: -10rem;
+        }
+        .testi-title {
+            margin-left: -10rem;
+        }
+        .testi-1:last-child {
+            display: none;
+        }
+        .inline-testi {
+            margin-left: 6rem;
+        }
+        .squared-button {
+            margin-left: 6rem;
+        }
+        .footer-logo {
+            margin-left: -8rem;
+        }
+        .media-list {
+            margin-left: -10rem;
+        }
+
+        .leftbutton2 {
+            margin-left: -14rem;
+        }
+
+        .subscribe-form {
+            margin-left: 30rem;
+        }
+        .signature-block {
+            display: none;
+        }
+        .middle-footer-nav {
+            margin-left: -10rem;
+        }
+    }
+
+
+
+
+
 @media screen and (max-width: 640px){
     .burger-menu {
         display: flex;
+        right: 25rem;
     }
-
+    .header-logo {
+        margin-left: -13rem;
+    }
     .nav-list {
         display: none;
     }
@@ -719,18 +913,34 @@ form {
         display: none;
     }
     .watch-text {
-        display: none;
+        margin-left: 22rem;
+        margin-top: -12rem;
+        font-size: 54px;
+        line-height: 40px;
     }
     .watch-circle {
-        display: none;
+        margin-left: 20rem;
+        margin-top: .2rem;
+        width: 237.6px;
+        height: 237.6px;
     }
     .watch-button {
-        margin-left: 25%;
-        margin-top: 10rem;
-        }
+        width: 298px;
+        height: 54px;
+        margin-left: 7%;
+        margin-top: 5rem;
+    }
+    .backstage-image {
+        display: none;
+    }
     .backstage-text {
-        margin-left: -28rem;
-        margin-top: -30rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+
+    }
+    .backstage-text h2 {
+    font-size: 48px;
+    line-height: 120%;
     }
         .logo-box {
         margin-left: -15rem;
@@ -740,10 +950,10 @@ form {
     }
 
     .grid-pets {
-        margin-left: -19rem;
+        margin-left: -2rem;
         display: grid;
         grid-template-columns: auto;
-        padding-bottom: 25rem;
+        padding-bottom: 30rem;
     }
     .pet {
         border-radius: 5px;
@@ -751,22 +961,30 @@ form {
         border-width: 0.7mm;
         padding: 10px;
         object-fit: cover;
-        width: 400px;
+        width: 285px;
+        height: 400px;
         align-items: center;
         margin-right: -5rem;
+    }
+    .pet img{
+        width: 250px;
+        height: 320px;
+        align-items: center;
     }
 
     .backstage-image {
         margin-left: 2rem;
     }
+    .arrows {
+        margin-left: 11rem;
+    }
     .centered-button {
-        margin-top: -45rem;
-        margin-left: 2rem;
+        margin-top: -75 rem;
+        margin-left: -22rem;
     }
     .centered-button2 {
         margin-left: -35rem;
     }
-
     .joy-text {
         width: 600px;
     }
@@ -904,6 +1122,21 @@ form {
     .footer-button {
         padding: 10px 25px;
         display: inline-block;
+    }
+    .media-list {
+        position: absolute;
+        margin-left: 21rem;
+        margin-top: -10rem;
+        gap: 2rem;
+    }
+    .subscribe-form {
+        display:none;
+    }
+    .middle-footer-nav {
+        margin-left: -17rem;
+    }
+    .footer-logo {
+        margin-left: -12rem;
     }
 }
 
