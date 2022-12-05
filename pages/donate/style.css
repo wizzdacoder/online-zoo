@@ -437,3 +437,517 @@ form {
     margin: 0;
     padding: 0;
 }
+.burger-menu {
+    position: absolute;
+    top: 2rem;
+    right: 15%;
+    width: 30px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.burger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* DIFFERENT SCREEN SIZES */
+@media screen and (max-width: 1000px){
+    .nav-item-end {
+        margin-left: 15%;
+    }
+        body {
+            width: 1000px;
+        }
+        .watch-background-image {
+            width: 1000px;
+            height: 584px;
+        }
+        .watch-circle {
+            width: 367px;
+            height: 367px;
+            margin-top: -2rem;
+        }
+        .watch-text {
+            font-size: 85.6px;
+            line-height: 63.75px;
+            padding-left: 1rem;
+            margin-top: -19rem;
+        }
+        .watch-button {
+            margin-top: 3rem;
+        }
+        .nav-list {
+            margin-left: 8rem;
+        }
+
+        .nav-item-end {
+            margin-left: 5rem;
+        }
+        .backstage-block {
+        margin-top: -7rem;
+        }
+        .backstage-image img{
+        width: 455px;
+        height: 408px;
+        margin-left: 2rem;
+        }
+
+        .backstage-text {
+        margin-left: 3rem;
+        }
+
+        .pet {
+            width: 294px;
+            height: 354px;
+            border-radius: 5px;
+            border: solid orange;
+            border-width: 0.7mm;
+            padding: 0 0 10px 0;
+            object-fit: fill;
+        }
+
+        .pet img {
+            width: 289px;
+            height: 280px;
+        }
+
+        .petfood {
+            width: 38px;
+            height: 38px;
+            margin-left: 15rem;
+            margin-top: -3rem;
+        }
+
+        .grid-pets {
+            padding-top: 6rem;
+            row-gap: 6rem;
+            column-gap: 1.5rem;
+            width: 600px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        .arrows {
+            position: absolute;
+            gap: 10rem;
+            margin-left: 22.5rem;
+            margin-top: -32rem;
+        }
+        .how-images {
+            gap: 15%;
+        }
+        .how-img-1 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-2 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-3 {
+            width: 168px;
+            height: 168px;
+        }
+        .how-img-4 {
+            margin-left: 12rem;
+        }
+        .how-img-5 {
+            margin-left: 32rem;
+        }
+        .caption-pay {
+            gap: 12rem;
+        }
+        .black-title {
+            margin-left: -10rem;
+        }
+        .orange-title {
+            margin-left: -10rem;
+        }
+        .centered-button2 {
+            margin-left: -10rem;
+        }
+        .testi-title {
+            margin-left: -10rem;
+        }
+        .testi-1:last-child {
+            display: none;
+        }
+        .inline-testi {
+            margin-left: 6rem;
+        }
+        .squared-button {
+            margin-left: 6rem;
+        }
+        .footer-logo {
+            margin-left: -8rem;
+        }
+        .media-list {
+            margin-left: -10rem;
+        }
+
+        .leftbutton2 {
+            margin-left: -14rem;
+        }
+
+        .subscribe-form {
+            margin-left: 30rem;
+        }
+        .signature-block {
+            display: none;
+        }
+        .middle-footer-nav {
+            margin-left: -10rem;
+        }
+    }
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .burger-menu {
+        display: flex;
+        right: 25rem;
+    }
+    .header-logo {
+        margin-left: -13rem;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-item-end {
+        display: none;
+    }
+    .watch-text {
+        margin-left: 22rem;
+        margin-top: -12rem;
+        font-size: 54px;
+        line-height: 40px;
+    }
+    .watch-circle {
+        margin-left: 20rem;
+        margin-top: .2rem;
+        width: 237.6px;
+        height: 237.6px;
+    }
+    .watch-button {
+        width: 298px;
+        height: 54px;
+        margin-left: 7%;
+        margin-top: 5rem;
+    }
+    .backstage-image {
+        display: none;
+    }
+    .backstage-text {
+        margin-left: 5rem;
+        margin-top: 1rem;
+
+    }
+    .backstage-text h2 {
+    font-size: 48px;
+    line-height: 120%;
+    }
+        .logo-box {
+        margin-left: -15rem;
+    }
+    header {
+        position: fixed;
+    }
+
+    .grid-pets {
+        margin-left: -2rem;
+        display: grid;
+        grid-template-columns: auto;
+        padding-bottom: 30rem;
+    }
+    .pet {
+        border-radius: 5px;
+        border: solid orange;
+        border-width: 0.7mm;
+        padding: 10px;
+        object-fit: cover;
+        width: 285px;
+        height: 400px;
+        align-items: center;
+        margin-right: -5rem;
+    }
+    .pet img{
+        width: 250px;
+        height: 320px;
+        align-items: center;
+    }
+
+    .backstage-image {
+        margin-left: 2rem;
+    }
+    .arrows {
+        margin-left: 11rem;
+    }
+    .centered-button {
+        margin-top: -75 rem;
+        margin-left: -22rem;
+    }
+    .centered-button2 {
+        margin-left: -35rem;
+    }
+    .joy-text {
+        width: 600px;
+    }
+    .covid-text {
+        width: 500px
+    }
+
+    .caption-pay {
+        display: grid;
+    }
+
+    .pay1 {
+        position: absolute;
+        margin-top: -40rem;
+        margin-left: 10rem;
+    }
+    .pay2 {
+        position: absolute;
+        margin-top: -30rem;
+        margin-left: 10rem;
+    }
+    .pay3 {
+        position: absolute;
+        margin-top: -21rem;
+        left: 13rem;
+    }
+
+    .orange-title {
+        margin-left: -35rem;
+    }
+    .how-img-4 {
+        display: none;
+    }
+    .how-img-5 {
+        display: none;
+    }
+
+    .covid-text {
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .how-images {
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+    }
+    .black-title {
+        margin-left: -35rem;
+
+    }
+    .how-images img {
+        display: inline-block;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .testi-title {
+        margin-top: 5rem;
+        margin-left: -35rem;
+    }
+    .inline-testi {
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-table;
+        padding-top: 5rem;
+        margin-left: 12rem;
+    }
+    .slide-bar {
+        margin-left: 1rem;
+    }
+    .squared-button {
+        margin-left: 3rem;
+        margin-top: 5rem;
+    }
+
+
+    .media-list {
+        margin-left: -3rem;
+        margin-top: 3rem;
+    }
+
+    .left-footer {
+        margin-left: 20rem;
+    }
+
+    .middle-footer-nav {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    .footer-list {
+        margin: auto;
+        margin-left: 20rem;
+        margin-top: -2rem;
+        width: 50%;
+        display: flex;
+    }
+    .footer-item {
+        margin: 0 2rem;
+    }
+
+    .subscribe-form {
+        position: absolute;
+        margin-left: 40rem;
+        margin-top: -27rem;
+    }
+    .signature-block {
+        display: block;
+        white-space: nowrap;
+        margin-top: -3rem;
+        margin-left: 60rem;
+    }
+    .signature-block a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 100;
+    }
+    .signature-block a:hover {
+        text-decoration: underline;
+    }
+
+    input {
+        background-color: black;
+        border: solid #FE9013;
+        border-width: 0.5mm;
+        padding: 10px 25px;
+        display: inline!important;
+    }
+
+    .footer-button {
+        padding: 10px 25px;
+        display: inline-block;
+    }
+    .media-list {
+        position: absolute;
+        margin-left: 21rem;
+        margin-top: -10rem;
+        gap: 2rem;
+    }
+    .subscribe-form {
+        display:none;
+    }
+    .middle-footer-nav {
+        margin-left: -17rem;
+    }
+    .footer-logo {
+        margin-left: -12rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body {
+        width: 320px;
+    }
+    header {
+        width: 100%;
+    }
+
+    .header-logo {
+        margin-left: 6.5rem;
+    }
+    .watch-background-image {
+        width: 384px;
+        height: 187px;
+        padding-bottom: 5rem;
+        margin-left: -2rem;
+    }
+    .watch-text {
+        margin-left: 12rem;
+        margin-top: -6rem;
+        font-size: 27px;
+        line-height: 20px;
+    }
+    .watch-circle {
+        margin-left: 12rem;
+        margin-top: .2rem;
+        width: 119px;
+        height: 119px;
+    }
+    .watch-button {
+        width: 298px;
+        height: 54px;
+        margin-left: 3rem;
+        margin-top: 4rem;
+    }
+    .backstage {
+        padding-top: 10rem;
+    }
+    .burger-menu {
+        display: flex;
+        right: 2rem;
+    }
+    .bottom-flowers {
+        display: none;
+    }
+    .bottom-leav {
+        display: none;
+    }
+    .right-flowers {
+        display: none;
+    }
+    .friend {
+        display: none;
+    }
+    .backstage-image {
+        display:none;
+    }
+    .backstage-text {
+        width: 290px;
+        margin-left: 1rem;
+        font-weight: 400;
+    }
+    .backstage-text h2 {
+    font-size: 24px;
+    justify-content: center;
+    }
+    .backstage-text p {
+        font-size: 16px;
+        justify-content: center;
+        }
+
+    .centered-button {
+        display: flex;
+        margin-top: 25rem;
+        margin-left: 1rem;
+    }
+
+    .grid-pets {
+        row-gap: 1rem;
+        padding-top: 8rem;
+        margin-left: -12rem;
+    }
+
+    .testi-title {
+        margin-top: 45rem;
+        mergin-left: 1rem;
+    }
+    .inline-testi {
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-table;
+        padding-top: 45rem;
+    }
+    .footer {
+        width: 100%;
+    }
+
+}
