@@ -1,19 +1,16 @@
-document.addEventListener('DOMContentLoaded', function(){
-"use strict"
+const gap = 16;
 
-function changeImage() {
+const carousel = document.getElementById("carousel"),
+  content = document.getElementById("content"),
+  next = document.getElementById("next"),
+  prev = document.getElementById("prev");
 
-    if (document.getElementsByClassName("leftarrow").src=="../../assets/images/arrow_elips_1.png")
-    {
-        document.getElementsByClassName("leftarrow").src="../../assets/icons/arrow_elips_l.png";
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+});
 
-    }
-}
-
-
-
-
-
-
-
-})
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));

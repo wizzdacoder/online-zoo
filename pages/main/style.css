@@ -236,8 +236,20 @@ PETS
     border: solid orange;
     border-width: 0.7mm;
     padding: 0 0 20px 0;
-    object-fit: cover;
+    width: 100%;
+    max-width: 964px;
+    position: relative;
 }
+
+.wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .pet:hover .caption {
     animation-name: floating;
     animation-duration: 3s;
@@ -278,10 +290,10 @@ PETS
     column-gap: 1.5rem;
     width: 1160px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-gap: 16px;
     margin: auto;
-    justify-content: space-evenly;
-
+    box-sizing: border-box;
+    grid-auto-flow: column;
 }
 .button {
     text-align: center;
@@ -320,9 +332,9 @@ PETS
     margin-top: 11.5rem;
 }
 .arrows {
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 10rem;
-    gap: 70rem;
+    gap: 80rem;
     display: flex;
     margin: auto;
     justify-content: space-evenly;
@@ -342,9 +354,20 @@ PETS
 .petfood {
     display: flex;
     position: absolute;
-    margin-top: -2rem;
+    margin-top: -4rem;
     margin-left: 19.5rem;
 }
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+  }
+
 
 /*
 *
@@ -579,7 +602,6 @@ TESTIMONIALS
     font-size: 16px;
     font-weight: 500;
     margin-top: 4rem;
-    padding-bottom: 1rem;
 }
 .squared-button:hover {
     background-color: #E47209;
@@ -742,6 +764,15 @@ form {
     padding: 0;
 }
 
+.media-list a {
+    text-decoration: none;
+    color: white;
+}
+.media-list span {
+    position: absolute;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+}
 /* DIFFERENT SCREEN SIZES */
 @media screen and (max-width: 1000px){
     .nav-item-end {
